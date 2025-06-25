@@ -1,0 +1,149 @@
+* {
+    font-family: 'Montserrat';
+}
+
+body {
+    margin: 0px;
+}
+
+main {
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between
+
+}
+img.logo{
+    height: 68px;
+    width: 210;
+    justify-content: space-between;
+    color:#ff6060 
+    
+}
+div.test{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 24px;
+    color: #000
+}
+
+div.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 223px;
+    position: relative;
+}
+
+img.photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+div.photoText {
+    width: 100%;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    border-radius: 25px;
+}
+
+div.sombre {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.contenu{
+    
+}
+
+div.logements{
+    padding: 40px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+}
+
+div.card{
+    background-color: #ff6060;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+footer{
+    background-color: #000;
+    width: 100%;
+    height: 240px;
+    color: #F6F6F6;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+    
+}
+
+footer img {
+    margin-top: 60px;
+}
+div.coolaps .titre{
+    background-color:#FF6060;
+    color: #F6F6F6;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.coolaps .description {
+    background-color: #F6F6F673;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 5PX;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400px;
+    font-size:18px ;
+}
+
+div.coolaps .description.visible {
+    display: flex;
+}
