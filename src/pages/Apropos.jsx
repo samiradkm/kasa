@@ -9,11 +9,12 @@ export default function Apropos() {
                 <div>
                     <header>
                         <img className="logo" src="/logo.svg" />
-                        <div className="test">
+                        <div className="menu">
+                            <a href="/">Accueil</a>
+
                             <u>
-                                <a>Accueil</a>
+                                <a href="/apropos">A propos</a>
                             </u>
-                            <a>A propos</a>
                         </div>
                     </header>
                 </div>

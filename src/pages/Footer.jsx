@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="logo">
                 <img
                     className="logo"
-                    src="logo_blanc.svg"
+                    src="/logo_blanc.svg"
                     width="122"
                     height="40"
                 ></img>

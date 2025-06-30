@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Card from "./Card";
 import Footer from "./Footer";
 import "./style.css";
+import { Link } from "react-router";
 
 export default function Home() {
     const [logements, setLogements] = useState([]);
@@ -19,11 +20,11 @@ export default function Home() {
                 <div>
                     <header>
                         <img className="logo" src="/logo.svg" />
-                        <div className="test">
+                        <div className="menu">
                             <u>
-                                <a>Accueil</a>
+                                <a href="/">Accueil</a>
                             </u>
-                            <a>A propos</a>
+                            <a href="/apropos">A propos</a>
                         </div>
                     </header>
                 </div>
@@ -35,7 +36,14 @@ export default function Home() {
 
                 <div className="logements">
                     {logements.map(function (logement) {
-                        return <Card titre={logement.title} />;
+                        return (
+                            <Link
+                                to={"/fichelogement/" + logement.id}
+                                key={logement.id}
+                            >
+                                <Card titre={logement.title} />
+                            </Link>
+                        );
                     })}
                 </div>
             </main>

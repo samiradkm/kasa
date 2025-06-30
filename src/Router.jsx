@@ -5,16 +5,20 @@ import Page404 from "./pages/Page404";
 import Fichelogement from "./pages/Fichelogement";
 import Apropos from "./pages/Apropos";
 
-export default function Router () {
-    return <BrowserRouter>
-    <Routes>
-        <Route path="/"> 
-            <Route index element={ <Home/>}/>
-            <Route  path="fichelogement" element={<Fichelogement/>}/>
-            <Route path="apropos" element={<Apropos/>}/>
-            <Route  path="*" element={<Page404/>}/>
-            
-        </Route>
-    </Routes>
-    </BrowserRouter>
+export default function Router() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/">
+                    <Route index element={<Home />} />
+                    <Route
+                        path="/fichelogement/:id"
+                        element={<Fichelogement />}
+                    />
+                    <Route path="apropos" element={<Apropos />} />
+                    <Route path="*" element={<Page404 />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
