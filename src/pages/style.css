@@ -129,11 +129,8 @@ div.coolaps .titre{
 
 div.coolaps .description {
     background-color: #F6F6F673;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border-bottom-left-radius: 5PX;
+    padding: 20px;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -214,4 +211,76 @@ div.caroussel div.fleches img {
 div.caroussel div.page {
     padding-bottom: 15px;
     margin-top: auto;
+}
+
+div.bas{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+div.grand{
+font-weight: 500;
+font-size: 36px;
+color: #FF6060;
+}
+div.petit{
+    font-weight: 500;
+    font-size: 18px;
+    color: #ff6060;
+}
+div.tags{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+div.tags span{
+    background-color: #FF6060;
+    border-radius: 10px;
+    color: #F6F6F6;
+    width: 115px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+div.properties{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
+div.propertie{
+    display: flex;
+    flex-direction: row;
+   border-radius: 10px;
+   padding-top: 10px;
+   padding-right: 20px;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   width: 1240px;
+   height: 52px;
+   gap: 50px;
+   height: auto;
+}
+div.propertie div.coolaps{
+    width: 50%;
+}
+
+div.host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+div.host img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
 }
