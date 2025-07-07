@@ -18,7 +18,6 @@ export default function Coolaps({ titre, description }) {
     }
 
     function changerVisible() {
-        console.log(visible);
         updateVisible(!visible);
     }
 
