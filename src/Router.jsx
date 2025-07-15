@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Page404 from "./pages/Page404";
 import Fichelogement from "./pages/Fichelogement";
 import Apropos from "./pages/Apropos";
+import { Navigate } from "react-router";
 
 export default function Router() {
     return (
@@ -16,7 +17,8 @@ export default function Router() {
                         element={<Fichelogement />}
                     />
                     <Route path="apropos" element={<Apropos />} />
-                    <Route path="*" element={<Page404 />} />
+                    <Route path="/404" element={<Page404 />} />
+                    <Route path="*" element={<Navigate to="/404" />} />
                 </Route>
             </Routes>
         </BrowserRouter>

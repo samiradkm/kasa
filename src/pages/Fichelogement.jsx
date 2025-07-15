@@ -3,16 +3,25 @@ import Caroussel from "./Caroussel";
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import Coolaps from "./coolaps";
+import { Navigate } from "react-router";
 
 export default function Fichelogement() {
     const { id } = useParams();
     const [logement, setLogement] = useState();
     const [etoiles, setEtoiles] = useState([]);
+    const [logementIntrouvable, setLogementIntrouvable] = useState(false);
 
     useEffect(
         function () {
             fetch("http://localhost:8080/api/properties/" + id)
-                .then((response) => response.json())
+                .then((response) => {
+                    console.log(response.status);
+                    if (response.status === 404) {
+                        // Si on a pas trouver de logement
+                        setLogementIntrouvable(true);
+                    }
+                    return response.json();
+                })
                 .then((data) => {
                     const listeEtoiles = [];
                     for (let i = 1; i <= 5; i++) {
@@ -29,6 +38,10 @@ export default function Fichelogement() {
         },
         [id]
     );
+
+    if (logementIntrouvable) {
+        return <Navigate to="/404" />;
+    }
 
     return (
         <>
