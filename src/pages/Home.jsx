@@ -41,7 +41,10 @@ export default function Home() {
                                 to={"/fichelogement/" + logement.id}
                                 key={logement.id}
                             >
-                                <Card titre={logement.title} />
+                                <Card
+                                    titre={logement.title}
+                                    cover={logement.cover}
+                                />
                             </Link>
                         );
                     })}
