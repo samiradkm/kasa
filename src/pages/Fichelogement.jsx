@@ -68,17 +68,15 @@ export default function Fichelogement() {
                             ))}
                         </div>
                     </div>
-                    <div>
+                    <div class="hostAndRate">
                         <div className="host">
                             {logement?.host.name}
                             <img src={logement?.host.picture} />
                         </div>
-                        <div>
-                            <div>
-                                {etoiles.map((lien, index) => (
-                                    <img key={index} src={lien} />
-                                ))}
-                            </div>
+                        <div class="rate">
+                            {etoiles.map((lien, index) => (
+                                <img key={index} src={lien} />
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -248,7 +248,7 @@ color: #FF6060;
 div.petit{
     font-weight: 500;
     font-size: 18px;
-    color: #ff6060;
+    color: #000;
 }
 div.tags{
     display: flex;
@@ -260,8 +260,7 @@ div.tags span{
     background-color: #FF6060;
     border-radius: 10px;
     color: #F6F6F6;
-    width: 115px;
-    height: 25px;
+    padding: 10px;
     font-weight: 700;
     font-size: 14px;
     display: flex;
@@ -305,4 +304,130 @@ div.host img {
     width: 64px;
     height: 64px;
     border-radius: 100%;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    img.logo{
+        height: 46px;
+        width: 145px;
+        justify-content: space-between;
+        color:#ff6060 
+    } 
+
+    main {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    div.menu {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    header {
+        align-items: center;
+    }
+
+    div.photo {
+        height: 111px;
+    }
+
+    img.photo {
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    div.photoText {
+        font-size: 24px;
+        font-weight: 700;
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    div.logements {
+        padding: 0px;
+        background-color: transparent;
+        gap: 20px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+    div.coolaps .titre {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    div.coolaps .titre img {
+        width: 16px;
+    }
+
+    div.coolaps .description {
+        font-size: 12px;
+    }
+
+    div.caroussel img.courante {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    div.fleches img {
+        width: 11px;
+        height: 20px;
+    }
+
+    div.properties {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.grand {
+        font-size: 18px;
+    }
+
+    div.petit {
+        font-size: 14px;
+    }
+
+    div.tags span {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    div.propertie {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+    }
+
+    div.propertie div.coolaps {
+        width: 100%;
+    }
+
+    div.hostAndRate {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center ;
+        font-size: 12px;
+    }
+
+    div.rate img {
+        width: 16px;
+        height: 16px;
+    }
+
+    div.host img {
+        width: 32px;
+        height: 32px;
+    }
 }
